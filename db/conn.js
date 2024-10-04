@@ -1,6 +1,6 @@
-const { MongoClient } = require("mongodb"); //{variavel} pq é uma utilizacao local.
-const uri = "mongodb://127.0.0.1:27017/meubanco"; //endereço do banco de dados
-const client = new MongoClient(uri); //utilizar o client, passando a uri
+const { MongoClient } = require("mongodb");
+const uri = "mongodb://127.0.0.1:27017/meubanco";
+const client = new MongoClient(uri);
 async function run() {
   try {
     await client.connect();
