@@ -20,7 +20,6 @@ module.exports = class rotasController {
   }
 
   static async validacao(req, res) {
-    //metodo assincrono, pq envolve uma validação externa, e para q n trave a aplicação, necessita ser assincrona
     const email = req.body.txtEmail;
     const senha = req.body.txtSenha;
 
